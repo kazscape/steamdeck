@@ -22,3 +22,6 @@ makepkg -si
 
 # disable again the write over file system (steam os block)
 sudo steamos-readonly enable
+
+# install google chrome
+yay -S google-chrome
