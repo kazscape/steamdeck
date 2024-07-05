@@ -20,8 +20,8 @@ cd yay-bin
 git checkout 96f90180a3cf72673b1769c23e2c74edb0293a9f
 makepkg -si
 
-# disable again the write over file system (steam os block)
-sudo steamos-readonly enable
-
 # install google chrome
 yay -S google-chrome
+
+# disable again the write over file system (steam os block)
+sudo steamos-readonly enable
