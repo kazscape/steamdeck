@@ -14,6 +14,18 @@ sudo pacman-key --populate archlinux
 # install git and base-devel dependencies
 sudo pacman -S --needed git base-devel
 
+# install wine
+sudo pacman -S wine
+
+# install winetricks
+sudo pacman -S winetricks
+
+# install cjk font
+winetricks cjkfonts
+
+# reboot wine
+wineserver -k && wineboot
+
 # install yay from binary
 git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
@@ -22,6 +34,12 @@ makepkg -si
 
 # install google chrome
 yay -S google-chrome
+
+# install 1password
+yay -S 1password
+
+# install japanese input method
+yay -S fcitx5-im fcitx5-mozc
 
 # disable again the write over file system (steam os block)
 sudo steamos-readonly enable
