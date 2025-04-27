@@ -26,9 +26,6 @@ winetricks cjkfonts
 # install dotnet48
 winetricks dotnet48
 
-# add registration key "HKEY_CURRENT_USER\SOFTWARE\Classes"
-wine reg add "HKEY_CURRENT_USER\\SOFTWARE\\Classes"
-
 # reboot wine
 wineserver -k && wineboot
 
@@ -37,6 +34,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 git checkout 96f90180a3cf72673b1769c23e2c74edb0293a9f
 makepkg -si
+rm -rf yay-bin
 
 # install 1password
 yay -S 1password
