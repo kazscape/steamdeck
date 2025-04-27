@@ -15,10 +15,13 @@ sudo pacman-key --populate archlinux
 sudo pacman -S --needed git base-devel
 
 # install wine
-sudo pacman -S wine
+sudo pacman -Syu wine
 
 # install winetricks
-sudo pacman -S winetricks
+sudo pacman -Syu winetricks
+
+# install dotnet48
+winetricks dotnet48
 
 # install cjk font
 winetricks cjkfonts
@@ -37,6 +40,9 @@ yay -S 1password
 
 # install japanese input method
 yay -S fcitx5-im fcitx5-mozc
+
+# install git-credential-manager
+yay -S git-credential-manager
 
 # disable again the write over file system (steam os block)
 sudo steamos-readonly enable
