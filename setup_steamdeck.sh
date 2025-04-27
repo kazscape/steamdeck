@@ -20,11 +20,14 @@ sudo pacman -Syu wine
 # install winetricks
 sudo pacman -Syu winetricks
 
+# install cjk font
+winetricks cjkfonts
+
 # install dotnet48
 winetricks dotnet48
 
-# install cjk font
-winetricks cjkfonts
+# add registration key "HKEY_CURRENT_USER\SOFTWARE\Classes"
+wine reg add "HKEY_CURRENT_USER\\SOFTWARE\\Classes"
 
 # reboot wine
 wineserver -k && wineboot
