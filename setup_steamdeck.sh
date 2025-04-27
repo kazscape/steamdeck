@@ -34,7 +34,7 @@ git clone https://aur.archlinux.org/yay-bin.git
 cd yay-bin
 git checkout 96f90180a3cf72673b1769c23e2c74edb0293a9f
 makepkg -si
-rm -rf yay-bin
+rm -rf yay-bin/
 
 # install 1password
 yay -S 1password
