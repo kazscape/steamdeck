@@ -41,8 +41,5 @@ yay -S 1password
 # install japanese input method
 yay -S fcitx5-im fcitx5-mozc
 
-# install git-credential-manager
-yay -S git-credential-manager
-
 # disable again the write over file system (steam os block)
 sudo steamos-readonly enable
